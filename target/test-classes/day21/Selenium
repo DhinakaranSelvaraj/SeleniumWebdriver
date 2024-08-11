@@ -1,0 +1,16 @@
+Selenium Webdriver:-
+
+What is Selenium Webdriver?
+	1) Webdriver is one of the component in Selenium
+		a) Selenium IDE
+		b) Selenium Grid
+		c) Selenium Webdriver
+	2) Webdriver is a Java Interface
+	3) Webdriver is an API (Application Programming Interface)
+
+
+SearchContext(Root Interface)  Extends by -> WebDriver (I) --[Implemented by]--> RemoteWebDriver (C)--[Extends]--> ChromeDriver, FireFoxDriver, EdgeDriver (C) etc...
+
+Java --> Webdiver Method --> Browser
+
+Webdriver and Browser are interact with W3C protocal after Selenium V4. Before V4 it is Jason protocol
