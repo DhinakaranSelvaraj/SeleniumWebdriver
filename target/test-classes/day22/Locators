@@ -1,0 +1,48 @@
+Locators (ID, Name, LinkText, PartialLinkText, Class & Tag)
+---------
+
+We can identify various elements on the web using Locators
+Locators are addresses that identify a web element uniquely within the page.
+
+Locators -> [ID, Name, LinkText, PartialLinkText, Class & Tag]
+
+Customized Locators -> [CSS Selector, Xpath]
+
+CSS Selectors:
+	Tag and ID
+	Tag and Class
+	Tag and Attribute
+	Tag, Class and Attribute
+
+Xpath:
+	Absolute XPath
+	Relative XPath
+
+
+
+TagName - We cannot use TagName for finding a particular Webelement. TagName is used for identifing and locating group of webelements.
+Class - Category of Element. Same kind of elements are having same values for class attribute (Dropdown, Input) Used to locate group of elements or multiple web elements
+
+
+To calculate 'N' number of links or images in the particular page, we use this TagName and Class Locators 
+
+<ul> tag represents - user list
+<li> tag represenrs - list item
+
+
+FindElement() - Return Single WebElement
+FindElements() - Return Multiple WebElement
+
+Scenario 1: Locator matching with single web element
+findElement(loc) ----> Return Single web element - WebElement
+findElements(loc) --->  Return Single web element - List<WebElement>
+
+Scenario 2: Locator matching with multi web element
+findElement(loc) ----> 	Return Single web element - WebElement [Return first element]
+findElements(loc) --->  Return multi web element - List<WebElement>
+
+Scenario 3: Locator not matching with any web element/s
+findElement(loc) ----> 	Return "No such Element Exception"
+findElements(loc) --->  Returns 0 . It will not throw any exception.
+
+
