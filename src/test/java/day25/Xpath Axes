@@ -1,0 +1,101 @@
+Xpath Axes
+
+Locating a Parent Element
+-------------------------
+<Form>
+	<input id = "txtUsername" >
+
+1) //input[@id='txtUsername']/parent::form
+2) //input[@id='txtUsername']/parent::*
+3) //input[@id='txtUsername']/..
+
+
+Locating a Child Element
+-------------------------
+<div id="divUsername">
+	<input>
+	<span>
+	
+1) //div[@id='divUsername']child::input
+2) //div[@id='divUsername']/input
+
+
+Locating a ancestor of a known Element
+------------------------------------------
+<form id="frmLogin">
+	<div>
+		<input id = "txtUsername" >
+		<span>
+		
+1) //input[@id='txtUsername']/ancestor::form
+2) //input[@id='txtUsername']/ancestor::*
+
+
+Locating descendants of a known Element
+---------------------------------------
+<form id="frmLogin">
+	<div>
+		<input id = "txtUsername" >
+		<input id = "idName" >
+		<span>
+		
+1) //form[@id='frmLogin']/descendant::input[1]
+2) //form[@id='frmLogin']//input[1]
+
+
+Locating a Following Element
+-----------------------------
+<div>
+	<input id = "txtUsername" >
+<div>
+	<input id= "txtPassword">
+<div>
+	<input id = "btnLogin">
+	
+1) //input[@id='txtUsername']/following::input[2]
+2) //input[@id='txtUsername']/following::* [Represents all sibling name] - We cannot locate specific element
+3) //input[@id='txtUsername']/following::input[first()] [Represents first element]
+4) //input[@id='txtUsername']/following::input[last()]  [Represents last element] 
+
+
+
+Locating a Preceding Element
+-----------------------------
+<div>
+	<input id = "txtUsername" >
+	<span>Username</span> </div>
+<div>
+	<input id= "txtPassword">
+	<span>Password</span> </div>
+
+1) //span[text()='Password']/preceding::input
+
+
+Locating a Following Sibling Element
+------------------------------------
+<div>
+	<input id="txtUsername">
+	<span>Username</span>
+</div>
+
+1) //input[@id ='txtUsername']following-sibling::span
+2) //input[@id ='txtUsername']following-sibling::*
+
+
+Locating a Preceding Sibling Element
+------------------------------------
+<div>
+	<input id="txtUsername">
+	<span>Username</span>
+</div>
+
+1) //span[contains(text(),'Username')]/preceding-sibling::input
+2) //span[contains(text(),'Username')]/preceding-sibling::*
+
+
+
+
+
+
+
+

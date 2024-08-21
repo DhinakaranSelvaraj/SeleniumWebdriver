@@ -1,0 +1,63 @@
+XPath - It is derived from XML path
+XPath is an address of the element
+DOM - Document object Model
+Based on DOM, XPath will work.
+
+Types of XPath - 2
+1. Absolute XPath(Full XPath) - Contains Only TagName, Start from root HTML node.
+	EX:- /html/body/div[6]/div[1]/div[2]/div[2]/form/input
+	
+2. Relative XPath(Partial XPath)
+	EX:- //*[@id="small- searchterms"]
+	
+Which xpath will be preferred?  Relative xpath
+
+
+Difference Between Absolute & Relative xpath?
+
+
+Relative XPath
+--------------
+1) Generate Automatically - using Devtools, SelectorsHub
+2) Generate Manually
+
+
+Syntax:
+//tagname[@attribute='value']
+//*[@attribute='value']
+
+Xpath with Single Attribute
+		driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("T-Shirt");
+
+
+Xpath with Multiple Attribute
+		driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("T-Shirt");
+
+Xpath with 'and' 'or' operator
+		driver.findElement(By.xpath("//input[@name='search' and  @placeholder='Search']")).sendKeys("T-Shirt");
+		driver.findElement(By.xpath("//input[@name='search' or  @placeholder='Search']")).sendKeys("T-Shirt");
+
+		
+//Xpath with inner text - text()
+//a[text()='Desktop']
+		driver.findElement(By.xpath("//a[text()='Desktop']")).sendKeys("T-Shirt");
+
+		
+//Xpath with contains()
+		driver.findElement(By.xpath("//input[contains(@placeholder,'Sea')]"));
+		////tag[method(@attribute,'attribute value')]. Partial value is okay to search		
+		
+		
+Ex: <div></div>
+
+//div[contains(text(),'')]	
+//[contains(.,'')]	
+we can mention . for text()
+
+
+
+Difference between CSS and Xpath
+
+CSS -> Top Down Approach
+Xpath -> Multidirectional approach in DOM
+		

@@ -1,0 +1,14 @@
+CSS SELECTOR:- CSS - Cascading Style Sheets
+ CSS is a collection of multiple attributes, we can create our own CSS selector.
+ 
+ Tag name is present in all CSS selector. Ex: Tag + ID
+ 
+CSS Combination:
+tag id - 				tag#id
+tag class - 			tag.classname
+tag attribute - 		tag[attribute="value"]
+tag class attribute	-	tag.classname[attribute="value"]
+ 
+ 
+ 
+ 
