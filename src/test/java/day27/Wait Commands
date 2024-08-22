@@ -1,0 +1,96 @@
+Wait Commands
+--------------
+
+
+Synchronization Pbm -> Speed of automation script[Execution] is faster then application response
+
+Thread.sleep() - java method
+
+Selenium WebDriver Provided Wait Commands:
+	1) Implicit Wait
+	2) Explicit wait/Fluent Wait
+
+
+NoSuchElementException - When we have Synchronization pbm. [Element is not present], locator is correct
+ElementNotFoundException - When ever out locator not matching with element. Locator is incorrect.
+
+
+Advantages and Disadvantages of Sleep Command:
+	Adv:
+	Easy to use
+
+	DisAdv:
+	If the declared time is not sufficient, it will through exception
+	It wait for maximum time out, this will reduce the performance script
+	Multiple times
+
+
+
+Advantages and Disadvantages of Implicit Wait
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+	Adv:
+	Single time/One statement
+	It will not wait till maximum time if the element is available
+	Applicable for all the elements
+	easy to use
+	
+	DisAdv:
+	If the time is not sufficient then it will through exception
+
+
+Advantages and Disadvantages of Explicit wait
+1. Declaration
+2. Use of Explicit wait 
+
+Explicit wait works based on the condition and Time
+	Adv:
+	Conditional based, it will work more effectively
+	finding element is inclusive (for some conditions)
+	It will wait for condition to be true, them consider the time
+	
+	DisAdv:
+	We need to write multiple statements for multiple element
+
+Fluent wait
+
+// Waiting 30 seconds for an element to be present on the page, checking
+   // for its presence once every 5 seconds.
+   Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+       .withTimeout(Duration.ofSeconds(30L))
+       .pollingEvery(Duration.ofSeconds(5L))
+       .ignoring(NoSuchElementException.class);
+
+   WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
+     public WebElement apply(WebDriver driver) {
+       return driver.findElement(By.id("foo"));
+     }
+   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

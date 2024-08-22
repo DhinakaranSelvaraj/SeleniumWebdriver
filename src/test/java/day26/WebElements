@@ -1,0 +1,50 @@
+WEBELEMENTS
+-----------
+
+Webdriver Methods:
+	1. Get methods
+	2. Conditional Methods
+	3. Browser Methods
+	4. Navigational Methods
+	5. Wait Methods
+
+Get methods - We can access these methods through webdriver instance
+ get(url) - Opens the url on the browser
+ getTitle() -  returns title of the page
+ getCurrentUrl() - returns URL of the page
+ getPageSource() - returns source code of the page
+ getWindowHandle() - returns ID of the single browser window
+ getWindowHandles()	 - return ID's of the multiple browser windows
+
+
+Conditional Methods - Access these commands through WebElement
+ Returns boolean value (true/false)
+ isDisplayed() - Can check display status of the element
+ isEnabled() - can check enable/disable status of the element/operational element
+ isSelected() - can use to check the element is selected or not
+	
+	
+Browser Methods
+close() - close single browsers - wherever the drive is focused
+quit()	- close multiple browsers
+	
+testautomationpractice.blogspot.com
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
