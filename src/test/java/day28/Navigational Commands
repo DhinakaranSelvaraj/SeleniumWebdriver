@@ -1,0 +1,28 @@
+Navigational Commands
+-----------------------
+
+
+We can call from the driver
+navigate().to()
+navigate().back()
+navigate().forward()
+navigate().refresh()
+
+
+driver.get() -> //accepts URL only in the String format
+driver.navigate().to() ->  //accepts URL in string format and as well as URL object format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
