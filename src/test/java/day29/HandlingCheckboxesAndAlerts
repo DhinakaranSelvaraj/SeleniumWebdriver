@@ -1,0 +1,21 @@
+Checkboxes
+----------
+
+Alerts/Popups
+-------------
+3 types of alerts in Selenium
+1) Normal alert - OK
+2) Confirmation Alert - OK, Cancel
+3) Prompt Alert - Input box, OK, Cancel
+
+Alert is not a webelement
+
+accept()
+dismiss()
+getText()
+equals()
+sendKeys()
+
+Authenticated popup/alert
+//Syntax: https://username:password@the-internet.herokuapp.com/basic_auth" - Injecting user information along with URL
+
